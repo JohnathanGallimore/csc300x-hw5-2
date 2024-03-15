@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset ="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokebook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src ="script.js"></script>
+</head>
+<body>
+    <h1>Jokebook</h1>
+    <div id="joke-container"></div>
+    <div id="category-container"></div>
+    <div>
+        <label for="category">Select Category:</label>
+        <select id="category">
+
+        </select>
+        <button onclick="getJokes()">Get Jokes</button>
+    </div>
+    <div>
+        <h2>Add a New Joke</h2>
+        <form id="jokeForm" method="post">
+            <label for="newJoke">Joke:</label>
+            <input type="text" id="newJoke" name="newJoke">
+            <label for="response">Response:</label>
+            <input type="text" id="response" name="response">
+            <label for="category">Category:</label>
+            <select id="newJokeCategory" name="category">
+                <option value="funnyJoke">Funny Joke</option>
+                <option value="lameJoke">Lame Joke</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
